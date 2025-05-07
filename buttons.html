@@ -16,8 +16,17 @@
             border-radius: 2px;
             cursor: pointer;
             margin-right: 10px;
+            transition: opacity 0.15s;
             
             
+        }
+
+        .subscribe-button:hover{
+            background-color: rgb(255, 0, 0);
+            opacity:0.4;
+        }
+        .subscribe-button:active{
+            opacity:0.4;
         }
         .join-button{
             height:35px;
@@ -29,7 +38,19 @@
             background-color: white;
             border-radius: 2px;
             cursor: pointer;
+            transition: background-color 0.15s,color 0.15s;
+            
 
+        }
+
+        .join-button:hover{
+            background-color: rgb(49, 49, 242);
+            color:white;
+            
+        }
+        
+        .join-button:active{
+            opacity:0.7;
         }
 
         .tweet-button{
@@ -43,10 +64,16 @@
             font-weight: bold;
             font-size: 12px;
             cursor: pointer;
+            
 
 
             margin-left: 10px;
+            transition: box-shadow 0.19s;
 
+        }
+
+        .tweet-button:hover{
+            box-shadow: 5px 5px 10px rgba(0,0, 0, 0.30);
         }
 
         .sign-button {
@@ -67,7 +94,7 @@
     <button class="tweet-button">TWEET</button>
 
     <button class="sign-button">Sign in</button>
-    <a href="https://www.amazon.in/Samsung-Galaxy-Smartphone-Titanium-Storage/dp/B0CS5Z3T4M?pd_rd_w=lqxD8&content-id=amzn1.sym.f1d1b015-303a-428f-b80c-099bb6408b74&pf_rd_p=f1d1b015-303a-428f-b80c-099bb6408b74&pf_rd_r=HQJJST62QDDRGEDK9ENW&pd_rd_wg=JxJQ2&pd_rd_r=34b66045-98d1-4389-b198-9e09b9be7c29&pd_rd_i=B0CS5Z3T4M&ref_=pd_hp_d_btf_unk_B0CS5Z3T4M" target="_blank">Link</a>
+    
     
 </body>
 </html>
