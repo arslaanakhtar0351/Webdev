@@ -32,6 +32,7 @@
     border-radius: 2px;
     cursor: pointer;
     transition: background-color 0.5s, color 0.5s;
+    vertical-align:top;
 
 
 }
@@ -57,6 +58,7 @@
     font-weight: bold;
     font-size: 12px;
     cursor: pointer;
+     vertical-align:top;
 
 
 
@@ -108,6 +110,3 @@
     font-size:18px;
 }
 
-.github:hover{
-    background-color:
-}
