@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android UI Login/Signup</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="android-container">
+        <div class="header">
+            <div class="android-logo"></div>
+            <h1>Welcome</h1>
+            <div class="toggle-container">
+                <button id="toggleBtn" class="toggle-btn">Login</button>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <!-- Login Form -->
+            <form id="loginForm" class="form active">
+                <div class="input-group">
+                    <input type="text" id="loginUsername" required>
+                    <label for="loginUsername">Username</label>
+                    <span class="material-icons">person</span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="loginPassword" required>
+                    <label for="loginPassword">Password</label>
+                    <span class="material-icons">lock</span>
+                    <span class="material-icons toggle-password"
+                        onclick="togglePassword('loginPassword')">visibility_off</span>
+                </div>
+                <button type="submit" class="android-btn">Login</button>
+            </form>
+
+            <!-- Registration Form -->
+            <form id="registerForm" class="form">
+                <div class="input-group">
+                    <input type="text" id="registerName" required>
+                    <label for="registerName">Full Name</label>
+                    <span class="material-icons">badge</span>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="registerEmail" required>
+                    <label for="registerEmail">Email</label>
+                    <span class="material-icons">email</span>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="registerUsername" required>
+                    <label for="registerUsername">Username</label>
+                    <span class="material-icons">person</span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="registerPassword" required>
+                    <label for="registerPassword">Password</label>
+                    <span class="material-icons">lock</span>
+                    <span class="material-icons toggle-password"
+                        onclick="togglePassword('registerPassword')">visibility_off</span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="registerConfirmPassword" required>
+                    <label for="registerConfirmPassword">Confirm Password</label>
+                    <span class="material-icons">lock_reset</span>
+                </div>
+                <button type="submit" class="android-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const toggleBtn = document.getElementById('toggleBtn');
+        const loginForm = document.getElementById('loginForm');
+        const registerForm = document.getElementById('registerForm');
+
+        toggleBtn.addEventListener('click', function () {
+            loginForm.classList.toggle('active');
+            registerForm.classList.toggle('active');
+
+            if (loginForm.classList.contains('active')) {
+                toggleBtn.textContent = 'Sign Up';
+            } else {
+                toggleBtn.textContent = 'Login';
+            }
+        });
+
+        function togglePassword(inputId) {
+            const input = document.getElementById(inputId);
+            const icon = input.nextElementSibling.nextElementSibling;
+
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.textContent = 'visibility';
+            } else {
+                input.type = 'password';
+                icon.textContent = 'visibility_off';
+            }
+        }
+    </script>
+
+</body>
