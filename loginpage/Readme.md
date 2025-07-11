@@ -11,4 +11,4 @@
 
 `index.html` + `styles.css` - No frameworks!  
 
-*(College project - [Your Name])*  
+-ARSLAAN AKHTAR  
