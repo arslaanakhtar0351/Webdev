@@ -1,6 +1,24 @@
 .firstpic {
-    width:200px
-    height:300px
+    width: 300px;
+    
+    
+    
+    
+}
+
+.searchbox{
+    font-size:22px;
+    margin-left:30px;
+    width:500px;
+    padding: 12px 20px;
+   
+    font-family: Arial, sans-serif;
+    border:1px solid #ccc;
+    outline: none;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
+    
+    border-radius:50px;
+    border-width: 1px;
     
     
 }
