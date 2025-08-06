@@ -36,11 +36,7 @@
     margin-bottom:15px;
 }
 
-p{
-    font-family: Roboto;
-    margin-top:0px;
-    margin-bottom:0px;
-}
+
 
 .video-author{
     font-size:12px;
@@ -61,6 +57,9 @@ p{
     column-gap:16px;
     row-gap:40px;
 }
+
+
+
 
 
 
