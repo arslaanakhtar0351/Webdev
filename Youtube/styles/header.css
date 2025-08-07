@@ -29,10 +29,13 @@
     display:flex;
     flex-direction:row;
     height:55px;
-    background-color:white;
+    background-color: rgba(255, 255, 255, 0.8);
+        /* translucent white */
     border-bottom-width:1px;
     border-bottom-style:solid;
     border-color:rgb(228, 228, 228);
+    z-index:1;
+    backdrop-filter: blur(10px);
 
 
     justify-content:space-between;
