@@ -29,8 +29,17 @@
     display:flex;
     flex-direction:row;
     height:55px;
+    background-color:white;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-color:rgb(228, 228, 228);
+
 
     justify-content:space-between;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
 }
 
 .hamburger{
