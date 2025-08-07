@@ -65,9 +65,11 @@
     border-style:solid;
     border-color:rgb(204,204,204);
     margin-left:-1px;
-    margin-right:10px;
+    margin-right:20px;
     position:relative;
     transition:background-color 0.4s;
+    border-bottom-right-radius:33px;
+    border-top-right-radius: 33px;
 }
 
 .voice-search-button{
@@ -86,7 +88,8 @@
     border-width:1px;
     border-style:solid;
     border-color:rgb(204, 204, 204);
-    border-radius:2px;
+    border-bottom-left-radius:20px;
+    border-top-left-radius: 20px;
     box-shadow: inset 1px 2px 3px rgba(0,0 ,0,0.05);
     width:0;
 }
