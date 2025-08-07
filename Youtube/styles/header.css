@@ -128,7 +128,7 @@
 
 .notify-icon {
     height:25px;
-    margin-top:6px;
+    margin-top:4px;
 
 
 
@@ -136,7 +136,7 @@
 .profile-icon {
     height:30px;
     border-radius:100%;
-    margin-bottom:3px;
+    margin-bottom:-1px;
 
 
 
